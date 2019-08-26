@@ -1,0 +1,144 @@
+/************************
+Nav CSS
+Malik Tillman 2019
+*************************/
+
+/***** Set Relational Navigation Styles *****/
+/* Nav */
+.nav, .nav-mobile {
+  font-family: Josefin Sans Light, serif;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.nav-element, .nav-element-mobile {
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: white;
+
+  text-decoration: none;
+
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 1000ms ease;
+  -webkit-transition: background-color 1000ms ease;
+}
+
+/* Search */
+.search-input, .search-input-mobile {
+  width: 175px;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: width 1s;
+}
+
+#search, .search-input, .search-input-mobile, .search-bar, ::placeholder {
+  color: white;
+  font-family: Josefin Sans Light, serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.search-bar {
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+
+  transition: background-color 1s ease-out;
+}
+
+.search-bar:hover {
+  background-color: rgba(41, 125, 48, 0.2);
+  transition: background-color .2s ease-in;
+  -webkit-transition: background-color .2s ease-in;
+}
+
+/***** Setup Mobile Navigation Styles *****/
+/* Mobile Nav */
+.nav-container-mobile {
+  height: 0;
+  width: auto;
+  background-color: white;
+  display: block;
+  overflow: hidden;
+}
+
+.nav-mobile {
+  font-size: 25px !important;
+}
+
+.nav-element-mobile {
+  display: block;
+  opacity: 0;
+  color: black !important;
+  padding: 0 10px !important;
+}
+
+.nav-element-mobile:hover {
+  background-color: rgba(255, 0, 24, 0.2);
+
+  transition: background-color 1000ms ease;
+  -webkit-transition: background-color 1000ms ease;
+}
+
+@media (min-width: 700px) {
+  .nav-element-mobile, .nav-container-mobile {
+    display: none;
+  }
+}
+
+/* Mobile Search */
+.search-bar-mobile, .search-input-mobile, .search-input-mobile::placeholder {
+  color: black !important;
+}
+
+/* Menu Button */
+.hamburger-container {
+  display: none;
+
+  margin-top: 10px;
+}
+
+.bar1, .bar2, .bar3, .bar4 {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+@media (max-width: 700px) {
+  .hamburger-container {
+    display: inline-block;
+  }
+}
+
+/***** Style Desktop Navigation *****/
+
+.search-input::placeholder {
+  opacity: .6;
+}
+
+.nav-element:hover {
+  background-color: rgba(255, 255, 255, .2);
+
+  transition: background-color 1000ms ease;
+  -webkit-transition: background-color 1000ms ease;
+}
+
+@media (max-width: 700px) {
+  .nav, .nav-element {
+    display: none;
+  }
+}
+
+/* Search Icon */
+.search-icon {
+  width: 30px;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.search-icon:hover {
+  background-color: rgba(41, 125, 48, 0.2);
+}

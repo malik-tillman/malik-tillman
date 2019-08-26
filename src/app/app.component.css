@@ -1,0 +1,38 @@
+/***********************
+App Component CSS
+Malik Tillman 2019
+************************/
+
+/***** Fluid.JS Styles *****/
+#renderSurface {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -99;
+}
+
+/***** Set Uniform Margin and Padding *****/
+/* TODO: Set it  */
+/* Method 1: Set with Each Individual Component Natively */
+
+/* Method 2: Set for Entire Main Container */
+.mContainer {
+  padding: 0;
+}
+
+/* Method 3: Set for Each Individual Section */
+.headerContainer, .homeContainer {
+  padding: 0 0;
+}
+
+/***** Define Heights *****/
+/* TODO: Set min-height  */
+.headerContainer {
+  height: 20vh;
+}
+
+.homeContainer {
+  height: 60vh;
+}
+
+

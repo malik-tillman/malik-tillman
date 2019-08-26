@@ -1,0 +1,96 @@
+<!-----------------------------------------------
+Page Navigation HTML Template
+Malik Tillman 2019
+`navLinks` manipulation in 'nav.component.ts'.
+------------------------------------------------->
+
+<!-- Mobile Navigation -->
+<div class="mobile-container">
+  <!-- Menu Button -->
+  <div class="hamburger-container" #hamburger (click)="hamburgered()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <div class="bar4"></div>
+  </div>
+  <!-- Navigation and Search -->
+  <div class="nav-container-mobile">
+    <nav #nav class="nav-mobile">
+      <a (click)="linkHoverEnter(navLinks.home)"
+         href="{{ navLinks.home.href }}"
+         class="nav-element-mobile d-flex justify-content-center">
+        {{ navLinks.home.name }}
+      </a>
+      <a (click)="linkHoverEnter(navLinks.projects)"
+         href="{{ navLinks.projects.href }}"
+         class="nav-element-mobile d-flex justify-content-center">
+        {{ navLinks.projects.name }}
+      </a>
+      <a (click)="linkHoverEnter(navLinks.learn)"
+         href="{{ navLinks.learn.href }}"
+         class="nav-element-mobile d-flex justify-content-center">
+        {{ navLinks.learn.name }}
+      </a>
+      <a (click)="linkHoverEnter(navLinks.about)"
+         href="{{ navLinks.about.href }}"
+         class="nav-element-mobile d-flex justify-content-center">
+        {{ navLinks.about.name }}
+      </a>
+      <a (click)="linkHoverEnter(navLinks.contact)"
+         href="{{ navLinks.contact.href }}"
+         class="nav-element-mobile d-flex justify-content-center">
+        {{ navLinks.contact.name }}
+      </a>
+    </nav>
+
+    <div class="search-bar-container-mobile d-flex justify-content-center">
+      <div class="search-bar search-bar-mobile d-inline">
+        <p class="d-inline">C:\Search\</p>
+        <input class="search-input-mobile" type="text" autocomplete="off">
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav #nav class="nav my-3 d-flex justify-content-end flex-row">
+  <a (mouseenter)="linkHoverEnter(navLinks.home)"
+     (mouseleave)="linkHoverExit()"
+     href="{{ navLinks.home.href }}"
+     class="nav-element">
+    {{ navLinks.home.name }}
+  </a>
+  <a (mouseenter)="linkHoverEnter(navLinks.projects)"
+     (mouseleave)="linkHoverExit()"
+     href="{{ navLinks.projects.href }}"
+     class="nav-element">
+    {{ navLinks.projects.name }}
+  </a>
+  <a (mouseenter)="linkHoverEnter(navLinks.learn)"
+     (mouseleave)="linkHoverExit()"
+     href="{{ navLinks.learn.href }}"
+     class="nav-element">
+    {{ navLinks.learn.name }}
+  </a>
+  <a (mouseenter)="linkHoverEnter(navLinks.about)"
+     (mouseleave)="linkHoverExit()"
+     href="{{ navLinks.about.href }}"
+     class="nav-element">
+    {{ navLinks.about.name }}
+  </a>
+  <a (mouseenter)="linkHoverEnter(navLinks.contact)"
+     (mouseleave)="linkHoverExit()"
+     href="{{ navLinks.contact.href }}"
+     class="nav-element">
+    {{ navLinks.contact.name }}
+  </a>
+</nav>
+
+<div #search class="search d-flex justify-content-start justify-content-xl-end">
+  <a href="#"><img class="search-icon"
+                   src="assets/images/search_icons.png" alt="search"/></a>
+  <div class="search-bar d-inline">
+    <p class="d-inline">C:\Search\</p>
+    <input class="search-input" type="text" autocomplete="off">
+  </div>
+
+</div>

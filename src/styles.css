@@ -1,0 +1,31 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: Josefin Sans Light;
+  src: url(assets/fonts/JosefinSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Josefin Sans Thin;
+  src: url(assets/fonts/JosefinSans-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Josefin Sans Bold;
+  src: url(assets/fonts/JosefinSans-Bold.ttf) format("truetype");
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(13, 13, 13);
+  transition: background-color .5s ease-in;
+
+  /* No Highlight  */
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Safari */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}

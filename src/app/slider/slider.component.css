@@ -1,0 +1,60 @@
+#configText {
+  font-family: Josefin Sans Bold, serif;
+  letter-spacing: 2px;
+
+  color: rgba(100%, 100%, 100%, 0);
+  transition: color 1000ms ease;
+  -webkit-transition: color 2000ms ease;
+}
+
+.slider-mother {
+  position: absolute;
+}
+
+.slider-container {
+  /* Just instantiate some width and height to give it purpose */
+  width: 0;
+  height: 0;
+
+  /* Rotate relative to the center anchor
+      Calculate by dividing the width of .slider by 2*/
+  transform-origin: 225px 225px;
+  transform: rotate(-90deg);
+}
+
+.slider {
+  width: 450px;
+  height: 10px;
+  outline: none;
+}
+
+.slider:active {
+  cursor: grabbing;
+}
+
+.slider::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+  width: 13px;
+  height: 40px;
+
+  -webkit-appearance: none;
+  appearance: none;
+
+  border-radius: 4px;
+  background: #010101;
+}
+
+.slider::-moz-range-thumb {
+  width: 13px;
+  height: 40px;
+
+  -webkit-appearance: none;
+  appearance: none;
+
+  border-radius: 4px;
+  background: #010101;
+}

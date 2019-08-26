@@ -1,0 +1,25 @@
+/************************
+Header CSS
+Malik Tillman 2019
+*************************/
+
+/* Logo SVG Styles */
+#dist {
+  fill: white;
+}
+
+/* Logo Container Styles */
+.logo {
+  width: 7vw;
+  height: auto;
+}
+
+/* Name Header Styles */
+#name {
+  padding-left: 2vw;
+
+  font-family: Josefin Sans Thin, serif;
+  font-size: 5vw;
+  letter-spacing: 10px;
+  color: white;
+}
