@@ -1,38 +1,57 @@
-/***********************
+/*******************
 App Component CSS
 Malik Tillman 2019
-************************/
-
+*******************/
 /***** Fluid.JS Styles *****/
 #renderSurface {
-  position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
+
+  position: absolute;
   z-index: -99;
 }
 
 /***** Set Uniform Margin and Padding *****/
-/* TODO: Set it  */
-/* Method 1: Set with Each Individual Component Natively */
+/* Set for the Page Container */
+.page-container, .footer { padding: 0 100px; }
 
-/* Method 2: Set for Entire Main Container */
-.mContainer {
-  padding: 0;
-}
-
-/* Method 3: Set for Each Individual Section */
-.headerContainer, .homeContainer {
-  padding: 0 0;
-}
-
-/***** Define Heights *****/
-/* TODO: Set min-height  */
-.headerContainer {
+/***** Define Section Heights *****/
+.header-container {
   height: 20vh;
+
+  position: relative;
+  z-index: 2;
 }
 
-.homeContainer {
-  height: 60vh;
+.main-container {
+  height: 75vh;
+  overflow: hidden;
 }
 
+.footer-container {
+  height: 5vh;
+  min-height: 30px;
 
+  background-color: white;
+}
+
+/***** Footer Styles *****/
+.footer {
+  height: 5vh;
+
+  position: relative;
+  z-index: 3;
+
+  background-color: rgb(0, 102, 4);
+  transition: background-color 500ms ease-out, opacity 1s ease;
+}
+
+.footer:hover { opacity: .8; }
+
+/***** Remove Padding for Mobile *****/
+@media (max-width: 1199px) {
+  .page-container,
+  .main-container,
+  .footer-container,
+  .footer { padding: 0; }
+}

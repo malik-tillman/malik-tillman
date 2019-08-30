@@ -2,22 +2,33 @@
   Header HTML Template
   Malik Tillman 2019
 ------------------------->
-
-<div class="header d-flex align-content-center flex-wrap">
+<!-- Full Header Container -->
+<div class="header d-flex flex-wrap pt-0 pt-md-1 pt-xl-5">
   <!-- Name Section -->
-  <section class="col-xl-6 col-12 p-0 m-0 d-flex justify-content-center justify-content-xl-start">
-  <!-- Logo SVG -->
-    <svg class="logo flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="500" height="430" viewBox="0 0 500 430">
-      <path id="dist" class="d-flex justify-content-start"
-            d="M0,314H131L358,106V314H500V0H323.4Zm64,90H50V314H0V430H103V395H64v9Zm148-90H103V430H212V406H151V382h33V356.9l-33,.1V340h61V314Zm106,0H212V430H318V405H259V382h32V356H259V339h59V314Zm50,116V314H318V430h50ZM500,314H439l-64,61.82L439,430h61l-72-57.62Z">
-      </path>
-    </svg>
-  <!-- Name -->
-    <h1 id="name" class="align-self-center mt-3 mb-0 pl-3"></h1>
+  <section class="name-section p-0 col-12 col-xl-6 d-flex flex-column justify-content-center justify-content-xl-start order-last order-md-first">
+    <!-- Logo and Name Container -->
+    <div class="d-flex justify-content-center justify-content-xl-start">
+      <!-- Logo SVG -->
+      <svg class="logo flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 375">
+        <path id="dist" class="d-flex justify-content-start"
+              d="M0,314H131L358,106V314H500V0H323.4Zm64,90H50V314H0V430H103V395H64v9Zm148-90H103V430H212V406H151V382h33V356.9l-33,.1V340h61V314Zm106,0H212V430H318V405H259V382h32V356H259V339h59V314Zm50,116V314H318V430h50ZM500,314H439l-64,61.82L439,430h61l-72-57.62Z">
+        </path>
+      </svg>
+      <!-- Name -->
+      <div class="header-text pt-2 pt-md-3 pt-xl-4 pl-3 pl-md-4 pl-xl-5">
+        <h1 id="name" class="m-0 p-0"></h1>
+      </div>
+    </div>
+
+    <!-- Tag Line Container -->
+    <div class="d-flex justify-content-center">
+      <!-- Tag Line -->
+      <p id="tag-line" class="tagLine text-uppercase pl-0 m-0"></p>
+    </div>
   </section>
 
   <!-- Nav Section -->
-  <section class="col-xl-6 col-12 p-0 m-0 d-flex justify-content-center justify-content-xl-end">
+  <section class="nav-section p-0 m-0 col-12 col-xl-6 d-flex justify-content-start justify-content-md-center justify-content-xl-end order-first order-md-last">
     <!-- Nav Component -->
     <app-nav></app-nav>
   </section>

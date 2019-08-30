@@ -1,0 +1,49 @@
+.footer {
+  height: 100%;
+}
+
+.social-logo {
+  width: 35px;
+  height: 35px;
+
+  fill: white;
+  transition: fill 500ms ease-in-out;
+}
+
+.github:hover {
+  fill: #333;
+}
+
+.linkedIn:hover {
+  fill: #0077b5;
+}
+
+.github-link {
+  margin-right: 5vw;
+}
+
+.random-facts {
+  width: 325px;
+  color: white;
+  font-family: Josefin Sans Thin, serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.choice-logo {
+  width: 100.5px;
+  height: 45px;
+}
+
+@media (max-width: 720px) {
+  .social-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .choice-logo {
+    width: 67px;
+    height: 30px;
+  }
+}

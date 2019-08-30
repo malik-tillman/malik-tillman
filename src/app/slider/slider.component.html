@@ -1,6 +1,6 @@
-<div class="cont">
+<div class="slider-full-container">
   <!-- Config Text -->
-  <div class="d-flex justify-content-center align-content-end">
+  <div class="config-text-container d-flex justify-content-end align-items-end">
     <h1 #configText id="configText" class="text-uppercase">Config</h1>
   </div>
 
@@ -8,15 +8,18 @@
   <div class="d-flex justify-content-end">
     <div class="slider-mother d-flex col-2 justify-content-between">
       <div class="slider-container">
-        <input #slider1 id="slider1" class="slider" type="range" (input)="update(sliders.slider1)" (change)="showConfig(sliders.slider1)">
+        <input #slider1 id="slider1" class="slider" type="range"
+               (input)="update(sliders.slider1)" (change)="showConfig(sliders.slider1)">
       </div> <!-- Slider 1 Container -->
 
       <div class="slider-container">
-        <input #slider2 id="slider2" class="slider" type="range" (input)="update(sliders.slider2)" (change)="showConfig(sliders.slider2)">
+        <input #slider2 id="slider2" class="slider" type="range"
+               (input)="update(sliders.slider2)" (change)="showConfig(sliders.slider2)">
       </div> <!-- Slider 2 Container -->
 
       <div class="slider-container">
-        <input #slider3 id="slider3" class="slider" type="range" (input)="update(sliders.slider3)" (change)="showConfig(sliders.slider3)">
+        <input #slider3 id="slider3" class="slider" type="range"
+               (input)="update(sliders.slider3)" (change)="showConfig(sliders.slider3)">
       </div> <!-- Slider 3 Container -->
     </div> <!-- Justify Between Flex Box -->
   </div> <!-- Justify End Flex Box -->

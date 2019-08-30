@@ -2,23 +2,39 @@
 App Component Html Template
 Malik Tillman 2019
 ------------------------------->
+<!-- Loading Bar -->
+<ngx-loading-bar
+  [color]="'#730900'"
+  [height]="'3px'"
+  [includeSpinner]="false"
+  [fixed]="true"
+></ngx-loading-bar>
 
 <!-- Render Surface for Fluid.JS Background -->
 <canvas #renderSurface id="renderSurface"></canvas>
 
-<!-- Main Page Container -->
-<div class="mContainer">
+<!-- Page Container -->
+<div class="page-container">
   <!-- Header Section -->
-  <section class="headerContainer">
+  <section class="header-container">
     <!-- Header Component -->
     <app-header></app-header>
   </section>
 
-  <!-- Home Section -->
-  <section class="homeContainer d-xl-block d-flex align-items-end justify-content-center">
-    <!-- Home Component -->
-    <app-home></app-home>
+  <!-- Main Section -->
+  <section class="main-container">
+    <!-- Routing Outlet -->
+    <router-outlet></router-outlet>
   </section>
 </div>
+
+<!-- Footer Section -->
+<section class="footer-container">
+  <!-- Footer Container -->
+  <div #footer class="footer h-100">
+    <!-- Footer Component -->
+    <app-footer></app-footer>
+  </div>
+</section>
 
 

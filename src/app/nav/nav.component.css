@@ -19,8 +19,8 @@ Malik Tillman 2019
   text-decoration: none;
 
   background-color: rgba(255, 255, 255, 0);
-  transition: background-color 1000ms ease;
-  -webkit-transition: background-color 1000ms ease;
+  transition: background-color 1000ms ease, transform 750ms ease-in-out;
+  -webkit-transition: background-color 1000ms ease, transform 750ms ease-in-out;
 }
 
 /* Search */
@@ -57,11 +57,14 @@ Malik Tillman 2019
 /***** Setup Mobile Navigation Styles *****/
 /* Mobile Nav */
 .nav-container-mobile {
-  height: 0;
-  width: auto;
+  position: absolute;
+  height: 100vh;
+  width: 0;
+  z-index: 1;
+
   background-color: white;
+
   display: block;
-  overflow: hidden;
 }
 
 .nav-mobile {
@@ -69,23 +72,14 @@ Malik Tillman 2019
 }
 
 .nav-element-mobile {
-  display: block;
-  opacity: 0;
+  display: inline;
+
   color: black !important;
-  padding: 0 10px !important;
+  padding: 5px 0 !important;
 }
 
 .nav-element-mobile:hover {
-  background-color: rgba(255, 0, 24, 0.2);
-
-  transition: background-color 1000ms ease;
-  -webkit-transition: background-color 1000ms ease;
-}
-
-@media (min-width: 700px) {
-  .nav-element-mobile, .nav-container-mobile {
-    display: none;
-  }
+  transform: translate(10px, 5px) !important;
 }
 
 /* Mobile Search */
@@ -93,24 +87,79 @@ Malik Tillman 2019
   color: black !important;
 }
 
+.search-bar-mobile {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+}
+
+
+.nav-element-mobile, .search-container-mobile, .nav-header {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+
+
 /* Menu Button */
 .hamburger-container {
-  display: none;
+  padding: 2vh;
+  z-index: 2;
 
-  margin-top: 10px;
+  width: 8vh;
+
+  background-color: rgba(255, 255, 255, 1);
+
+  transition: width 1000ms;
 }
 
-.bar1, .bar2, .bar3, .bar4 {
+.grow {
+  width: 100vw;
+}
+
+.bar {
   width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 3px 0;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 4px;
 }
 
-@media (max-width: 700px) {
-  .hamburger-container {
-    display: inline-block;
+/* Logo SVG Styles */
+#dist {
+  fill: #000000;
+}
+
+/* Logo Container Styles */
+.logo {
+  width: 8vw;
+  height: 8vw;
+}
+
+/* Name and Tag Line Styles */
+#name {
+  padding-left: 2vw;
+
+  font-family: Josefin Sans Light, serif;
+  font-size: 5vw;
+  letter-spacing: 10px;
+  color: black;
+}
+
+.tagLine {
+  font-family: Josefin Sans Thin, serif;
+  font-size: 2vw;
+  letter-spacing: 5px;
+  color: black;
+}
+
+@media (max-width: 400px) {
+  #name {
+    letter-spacing: 5px;
   }
+}
+
+@media (max-width: 250px) {
+  .logo, #name {
+    display: none;
+  }
+
 }
 
 /***** Style Desktop Navigation *****/
@@ -121,19 +170,13 @@ Malik Tillman 2019
 
 .nav-element:hover {
   background-color: rgba(255, 255, 255, .2);
-
-  transition: background-color 1000ms ease;
-  -webkit-transition: background-color 1000ms ease;
-}
-
-@media (max-width: 700px) {
-  .nav, .nav-element {
-    display: none;
-  }
+  transform: translate(0, -10px) !important;
 }
 
 /* Search Icon */
 .search-icon {
+  margin-left: 15px;
+  margin-right: 15px;
   width: 30px;
   padding: 5px 5px;
   border-radius: 5px;
@@ -142,3 +185,16 @@ Malik Tillman 2019
 .search-icon:hover {
   background-color: rgba(41, 125, 48, 0.2);
 }
+
+@media (max-width: 1366px) {
+  .nav-element {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .nav-element {
+    padding: 10px 20px;
+  }
+}
+

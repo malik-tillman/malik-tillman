@@ -1,40 +1,49 @@
+.config-text-container{
+  position: absolute;
+
+  width: 60%;
+  height: 40%;
+
+
+}
+
 #configText {
-  font-family: Josefin Sans Bold, serif;
+  font-size: 5vw;
+  font-family: Josefin Sans Thin, serif;
   letter-spacing: 2px;
 
   color: rgba(100%, 100%, 100%, 0);
-  transition: color 1000ms ease;
+  transition: color 2000ms ease-in-out;
   -webkit-transition: color 2000ms ease;
 }
 
 .slider-mother {
-  position: absolute;
 }
 
 .slider-container {
   /* Just instantiate some width and height to give it purpose */
-  width: 0;
+  width: 35px;
   height: 0;
 
   /* Rotate relative to the center anchor
       Calculate by dividing the width of .slider by 2*/
-  transform-origin: 225px 225px;
+  transform-origin: 28vh 28vh;
   transform: rotate(-90deg);
 }
 
 .slider {
-  width: 450px;
-  height: 10px;
+  appearance: none;
+  width: 50vh;
+  height: 1px;
   outline: none;
+}
+
+.slider:hover {
+  cursor: grab;
 }
 
 .slider:active {
   cursor: grabbing;
-}
-
-.slider::-ms-fill-upper {
-  background: #ddd;
-  border-radius: 10px;
 }
 
 .slider::-webkit-slider-thumb {
@@ -49,12 +58,18 @@
 }
 
 .slider::-moz-range-thumb {
-  width: 13px;
+  width: 10px;
   height: 40px;
 
   -webkit-appearance: none;
   appearance: none;
 
-  border-radius: 4px;
+  border-radius: 15px;
   background: #010101;
+}
+
+@media (max-height: 700px) {
+  .slider-full-container {
+    display: none;
+  }
 }
