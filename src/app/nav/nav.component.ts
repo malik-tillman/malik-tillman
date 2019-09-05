@@ -208,7 +208,7 @@ export class NavComponent implements AfterViewInit {
     });
 
     /**
-     * Animate width of nav container
+     * Translate on the X-axis to reveal nav container
      */
     anime({
       targets: '.nav-container-mobile',
