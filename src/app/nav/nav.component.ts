@@ -214,7 +214,7 @@ export class NavComponent implements AfterViewInit {
       targets: '.nav-container-mobile',
       duration: 1500,
       easing: 'easeInOutExpo',
-      width: this.toggle ? '100vw' : '0',
+      translateX: this.toggle ? '0' : '-100%',
 
       /**
        * When this animation starts,
@@ -228,21 +228,8 @@ export class NavComponent implements AfterViewInit {
           targets: '.nav-element-mobile, .search-container-mobile, .nav-header',
           easing: !this.toggle ? 'easeInQuart' : 'linear',
           duration: 500,
-          delay: !this.toggle ? 450 : 0,
           opacity: !this.toggle ? '1' : '0',
 
-          /**
-           * Bring the content in on the X-axis
-           */
-          begin: () => {
-            anime({
-              targets: '.nav-element-mobile, .search-container-mobile, .nav-header',
-              easing: !this.toggle ? 'linear' : 'easeInQuart',
-              delay: !this.toggle ? 100 : 200,
-              duration: !this.toggle ? 800 : 700,
-              translateX: !this.toggle ? '0' : '00',
-            })
-          }
         });
 
         /**
