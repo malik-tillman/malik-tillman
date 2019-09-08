@@ -1,0 +1,9 @@
+plugins:
+  - jekyll-redirect-from
+
+/home  /#/home
+/projects /#/projects
+/learn /#/learn
+/about /#/about
+/contact /#/contact
+/** /#/home

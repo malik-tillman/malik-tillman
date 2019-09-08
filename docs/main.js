@@ -403,7 +403,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"],
             {
                 provide: _angular_common__WEBPACK_IMPORTED_MODULE_4__["LocationStrategy"],
-                useClass: _angular_common__WEBPACK_IMPORTED_MODULE_4__["PathLocationStrategy"]
+                useClass: _angular_common__WEBPACK_IMPORTED_MODULE_4__["HashLocationStrategy"]
             }
         ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
