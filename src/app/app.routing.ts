@@ -31,7 +31,8 @@ const appRoutes: Routes = [
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
-  }
+  },
+  { path: '**', component: HomeComponent }
 ];
 
 /**

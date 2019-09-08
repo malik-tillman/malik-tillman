@@ -462,7 +462,8 @@ const appRoutes = [
         path: '',
         redirectTo: '/home',
         pathMatch: 'full'
-    }
+    },
+    { path: '**', component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] }
 ];
 /**
  * Export routing module
