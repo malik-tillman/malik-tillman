@@ -400,7 +400,6 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _ngx_loading_bar_core__WEBPACK_IMPORTED_MODULE_16__["LoadingBarModule"]
         ],
         providers: [
-            _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"],
             {
                 provide: _angular_common__WEBPACK_IMPORTED_MODULE_4__["LocationStrategy"],
                 useClass: _angular_common__WEBPACK_IMPORTED_MODULE_4__["HashLocationStrategy"]

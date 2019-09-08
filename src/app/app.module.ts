@@ -55,7 +55,6 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     LoadingBarModule
   ],
   providers: [
-    Location,
     {
       provide: LocationStrategy,
       useClass: HashLocationStrategy
