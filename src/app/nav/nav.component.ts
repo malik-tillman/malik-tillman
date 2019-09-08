@@ -52,17 +52,17 @@ export class NavComponent implements AfterViewInit {
     },
     learn   : {
       name: 'LEARN',
-      href: '#',
+      href: '/learn',
       color: 'rgb(147,144,0)'
     },
     about   : {
       name: 'ABOUT',
-      href: '#',
+      href: '/about',
       color: 'rgb(108,0,125)'
     },
     contact : {
       name: 'CONTACT',
-      href: '#',
+      href: '/contact',
       color: 'rgb(0,90,125)'
     }
   };

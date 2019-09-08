@@ -10,6 +10,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
+import { PathLocationStrategy } from '@angular/common';
 
 /**
  * Application Components
@@ -21,6 +22,9 @@ import { HomeComponent } from './home/home.component';
 import { SliderComponent } from './slider/slider.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { LearnComponent } from './learn/learn.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 /**
  * NGX Loading Bar
@@ -39,7 +43,10 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     HomeComponent,
     SliderComponent,
     FooterComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    LearnComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +54,7 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     LoadingBarRouterModule,
     LoadingBarModule
   ],
-  providers: [],
+  providers: [PathLocationStrategy],
   bootstrap: [AppComponent]
 })
 

@@ -13,7 +13,7 @@ Malik Tillman 2019
 
 /***** Set Uniform Margin and Padding *****/
 /* Set for the Page Container */
-.page-container, .footer { padding: 0 100px; }
+.page-container, .footer { padding: 0 4vw; }
 
 /***** Define Section Heights *****/
 .header-container {

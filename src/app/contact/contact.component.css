@@ -1,0 +1,18 @@
+.contact {
+  margin-top: 150px;
+}
+
+.comingSoon {
+  font-size: 3vw;
+  font-family: Josefin Sans Thin, serif;
+
+  padding-bottom: 1vw;
+  color: rgba(255, 255, 255, .8);
+}
+
+.contact-info {
+  font-size: 2vw;
+  font-family: Josefin Sans Thin, serif;
+
+  color: rgba(255, 255, 255, .8);
+}
