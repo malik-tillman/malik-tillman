@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --output-path docs --watch",
+    "fast-build": "ng build --output-path docs && npm run server-config && git add . && npm run serve",
     "server-config": "cp ./CNAME ./docs/CNAME && cp _config.yml ./docs/_config.yml",
     "test": "ng test",
     "lint": "ng lint",

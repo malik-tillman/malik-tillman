@@ -1,9 +1,5 @@
 plugins:
   - jekyll-redirect-from
 
-/home  /#/home
-/projects /#/projects
-/learn /#/learn
-/about /#/about
-/contact /#/contact
-/** /#/home
+redirect_to:
+  - http://www.maliktillman.com
