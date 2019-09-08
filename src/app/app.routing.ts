@@ -32,7 +32,7 @@ const appRoutes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  { path: '**', component: HomeComponent }
+  { path: '**', redirectTo: '/home' }
 ];
 
 /**
