@@ -10,7 +10,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
-import { PathLocationStrategy } from '@angular/common';
+import {HashLocationStrategy, LocationStrategy, PathLocationStrategy} from '@angular/common';
 
 /**
  * Application Components
@@ -54,7 +54,12 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     LoadingBarRouterModule,
     LoadingBarModule
   ],
-  providers: [PathLocationStrategy],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
 
