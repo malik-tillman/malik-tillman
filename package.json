@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --output-path docs --watch",
+    "cname": "cp ./CNAME ./docs/CNAME",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
